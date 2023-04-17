@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background-color: rgb(26, 31, 48);
+  color: white;
+}
+
+.logo,.pokeball{
+  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4))
+}
+
+.breadcrumbs {
+  width: 95%;
+  margin: 10px auto;
+}
+.breadcrumbs > *{
+  display: inline-block;
+  margin-right: 10px;
+}
+.breadcrumbs .crumb:after {
+  content: '>';
+  color: aquamarine;
+  margin-left: 10px;
+}
+.breadcrumbs .crumb:last-child:after {
+  display: none;
+}
+.breadcrumbs .crumb a {
+  color:white;
+}
